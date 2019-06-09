@@ -142,11 +142,11 @@
         $submitter = $_POST["submitter"];
         $why = $_POST["why"];
 
-        // Datebase information
-        $server_name = "localhost";
-        $user_name = "root";
-        $password = "Msql940825qiu#";
-        $dbname = "fujiefujie";
+        // Database information
+        $server_name = "ysp9sse09kl0tzxj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+        $user_name = "d03qhmczyewbyoxm";
+        $password = "zf0k2ba0vwwj5jdf";
+        $dbname = "wim3a3a876huja7u";
 
         // Connect to the database
         $mysqli = new mysqli($server_name, $user_name, $password, $dbname);
@@ -305,10 +305,16 @@
           $list_of_books = array();
 
           // Datebase information
-          $server_name = "localhost";
-          $user_name = "root";
-          $password = "Msql940825qiu#";
-          $dbname = "fujiefujie";
+          // $server_name = "localhost";
+          // $user_name = "root";
+          // $password = "Msql940825qiu#";
+          // $dbname = "fujiefujie";
+
+          // Database information
+          $server_name = "ysp9sse09kl0tzxj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+          $user_name = "d03qhmczyewbyoxm";
+          $password = "zf0k2ba0vwwj5jdf";
+          $dbname = "wim3a3a876huja7u";
 
           // Connect to the database
           $mysqli3 = new mysqli($server_name, $user_name, $password, $dbname);
