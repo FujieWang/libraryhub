@@ -8,7 +8,10 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Civic technology - Unnamed</title>
+  <title>Civic tech - LibraryHub</title>
+
+
+  <link rel="icon" href="icon/icon.png">
 
   <!-- Font Awesome Icons -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -281,7 +284,7 @@
       <h2 class="text-center">CHECK THE RANKING OF YOUR FAVORITE BOOK</h2>
       <form action = "" method = "post">
         <div class="form-group">
-          <input type="text" class="form-control" id="inputTitle" name = "search_term" placeholder="The title of the book" required>
+          <input type="text" class="form-control" id="inputTitle" name = "search_term" placeholder="The title or keywords of the book" required>
         </div>
         <input type="hidden" name="action" value="search">
         <button type="submit" class="btn btn-outline-primary waves-effect">Search!</button>
@@ -390,7 +393,7 @@
   <!-- Footer -->
   <footer class="bg-light py-5">
     <div class="container">
-      <div class="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
+      <div class="small text-center text-muted">Template by: Start Bootstrap</div>
     </div>
   </footer>
 
