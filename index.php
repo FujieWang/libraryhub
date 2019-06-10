@@ -285,7 +285,7 @@
   <section class="page-section bg-light" id="search">
   <div class="container">
       <h2 class="text-center">CHECK THE RANKING OF YOUR FAVORITE BOOK</h2>
-      <br>
+      <br><br><br>
       <form action = "" method = "post">
         <div class="form-group">
           <input type="text" class="form-control" id="inputTitle" name = "search_term" placeholder="The title or keywords of the book" required>
@@ -390,7 +390,7 @@
 
     <div class="container">
     <h2 class="text-center" > Chicago Library Map </h2>
-    <br>
+    <br><br><br>
     <iframe src="https://www.google.com.qa/maps/d/u/0/embed?mid=1Ko20Q8LhtT0BjY30g7yF4fHgvSPKY7KI" width="1140" height="480"></iframe>
     </div>
   </section>
@@ -398,22 +398,23 @@
    <!-- Tech Section -->
    <section class="page-section bg-light" id="tech">
     <div class="container">
-    <h2 class="text-center" > Technology behind this site </h2>
-    <br>
+    <h1 class="text-center" > Technology behind this site </h1>
+    <br><br><br>
     <div class="row">
         <div class="col-md-4">
           <h2>Front End</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <p>We employ the template provided by <a href = "https://startbootstrap.com/themes/creative/">StartBootstrap</a>. To make it suitable for our site, we modified its content and styling. When it comes to generating the word cloud, we chose the model created by <a href = "https://github.com/wvengen/d3-wordcloud">wvengen</a>. Again, we studied his code in great details and slightly modified it for better visulization.</p>
+          <p><a class="btn btn-secondary" href="https://d3js.org/" role="button">More about D3 &raquo;</a></p>
         </div>
+
         <div class="col-md-4">
           <h2>Back End</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <p>The back end of our site is powered by PHP. All input data from the front end are passed to the server via POST method. Data are stored in the database after sanitization. To reload the data into the word cloud, we first extract information of all books, then encoded Javascript in PHP and generate the corresponding Javascipt code. Searching the ranking of a particular book is done in a similar fasion.</p>
+          <p><a class="btn btn-secondary" href="https://php.net/" role="button">More about PHP &raquo;</a></p>
        </div>
         <div class="col-md-4">
           <h2>Database & Hosting</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p> Mysql is our database management system. This project was initialized set off on our home computer with XAMPP and PHPMyAdmin. After successfully building the database, we hosted our site using <a href = "heroku.com">Heroku</a> (very easy to use). We chose JawsDB MySQL as our MySQL Database server and setting it up remotly with Mysql Workbence.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
