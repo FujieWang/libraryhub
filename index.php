@@ -259,7 +259,7 @@
   <div class="container">
       <!--Load Wordcloud-->
       <div class="container">
-        <h2 class="text-center">WORLD COULD</h2>
+        <h1 class="text-center">WORLD COULD</h1>
         <div id='wordcloud'></div>
         </div>
         <script>
@@ -373,7 +373,7 @@
   <section class="page-section" id="map">
 
     <div class="container">
-    <h2 class="text-center" > Library Map </h2>
+    <h2 class="text-center" > Chicago Library Map </h2>
     <iframe src="https://www.google.com.qa/maps/d/u/0/embed?mid=1Ko20Q8LhtT0BjY30g7yF4fHgvSPKY7KI" width="1140" height="480"></iframe>
     </div>
   </section>
