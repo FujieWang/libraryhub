@@ -63,6 +63,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#map">Map</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#tech">Technology behind</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -282,6 +285,7 @@
   <section class="page-section bg-light" id="search">
   <div class="container">
       <h2 class="text-center">CHECK THE RANKING OF YOUR FAVORITE BOOK</h2>
+      <br>
       <form action = "" method = "post">
         <div class="form-group">
           <input type="text" class="form-control" id="inputTitle" name = "search_term" placeholder="The title or keywords of the book" required>
@@ -386,14 +390,41 @@
 
     <div class="container">
     <h2 class="text-center" > Chicago Library Map </h2>
+    <br>
     <iframe src="https://www.google.com.qa/maps/d/u/0/embed?mid=1Ko20Q8LhtT0BjY30g7yF4fHgvSPKY7KI" width="1140" height="480"></iframe>
     </div>
   </section>
 
+   <!-- Tech Section -->
+   <section class="page-section bg-light" id="tech">
+    <div class="container">
+    <h2 class="text-center" > Technology behind this site </h2>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+          <h2>Front End</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Back End</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Database & Hosting</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+    </p>
+    </div>
+    </section>
+
   <!-- Footer -->
   <footer class="bg-light py-5">
     <div class="container">
-      <div class="small text-center text-muted">Template by: Start Bootstrap</div>
+      <div class="small text-center text-muted">Template by - <a href = "https://startbootstrap.com/themes/creative/">Start Bootstrap</a></div>
     </div>
   </footer>
 
