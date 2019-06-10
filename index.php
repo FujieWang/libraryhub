@@ -80,7 +80,7 @@
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 font-weight-light mb-5">NEED DESCRIPTION HERE!! </p>
+          <p class="text-white-75 font-weight-light mb-5">This is a platform for chicagoans to vote for their favorite fictions, find out the public libraries nearby and search information about books voted.</p>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">About this site</a>
         </div>
       </div>
@@ -94,7 +94,7 @@
         <div class="col-lg-8 text-center">
           <h2 class="text-white mt-0">About LibraryHub</h2>
           <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">NEED DESCRIPTION!!</p>
+          <p class="text-white-50 mb-4">The Chicago Public Library (CPL) is the public library system that serves the City of Chicago in the U.S. state of Illinois. It consists of 80 locations, including a central library, two regional libraries, and branches distributed throughout the city\'s 77 Community Areas. However, Chicagoans may still have difficulty finding out the CPL nearby. Also, librarians may know little about Chicagoans real interest in books. The voting and information-searching function and CPL distribution map in our website are therefore designed to help solve the information asymmetry problems.</p>
           <a class="btn btn-light btn-xl js-scroll-trigger" href="#vote">Vote your favorite book now!</a>
         </div>
       </div>
@@ -403,18 +403,18 @@
     <div class="row">
         <div class="col-md-4">
           <h2>Front End</h2>
-          <p>We employ the template provided by <a href = "https://startbootstrap.com/themes/creative/">StartBootstrap</a>. To make it suitable for our site, we modified its content and styling. When it comes to generating the word cloud, we chose the model created by <a href = "https://github.com/wvengen/d3-wordcloud">wvengen</a>. Again, we studied his code in great details and slightly modified it for better visulization.</p>
+          <p>We employ the template provided by <a href = "https://startbootstrap.com/themes/creative/">StartBootstrap</a>. To make it suitable for our site, we modified its content and styling. When it comes to generating the word cloud, we chose the model created by <a href = "https://github.com/wvengen/d3-wordcloud">wvengen</a>. Again, we studied his code in great details and slightly modified it for better visualization.</p>
           <p><a class="btn btn-secondary" href="https://d3js.org/" role="button">More about D3 &raquo;</a></p>
         </div>
 
         <div class="col-md-4">
           <h2>Back End</h2>
-          <p>The back end of our site is powered by PHP. All input data from the front end are passed to the server via POST method. Data are stored in the database after sanitization. To reload the data into the word cloud, we first extract information of all books, then encoded Javascript in PHP and generate the corresponding Javascipt code. Searching the ranking of a particular book is done in a similar fasion.</p>
+          <p>The back end of our site is powered by PHP. All input data from the front end are passed to the server via POST method. Data are stored in the database after sanitization. To reload the data into the word cloud, we first extract information of all books, then encoded Javascript in PHP and generate the corresponding Javascipt code. Searching the ranking of a particular book is done in a similar fashion.</p>
           <p><a class="btn btn-secondary" href="https://php.net/" role="button">More about PHP &raquo;</a></p>
        </div>
         <div class="col-md-4">
           <h2>Database & Hosting</h2>
-          <p> Mysql is our database management system. This project was initialized set off on our home computer with XAMPP and PHPMyAdmin. After successfully building the database, we hosted our site using <a href = "heroku.com">Heroku</a> (very easy to use). We chose JawsDB MySQL as our MySQL Database server and setting it up remotly with Mysql Workbence.</p>
+          <p> Mysql is our database management system. This project was initialized set off on our home computer with XAMPP and PHPMyAdmin. After successfully building the database, we hosted our site using <a href = "heroku.com">Heroku</a> (very easy to use). We chose JawsDB MySQL as our MySQL Database server and setting it up remotely with Mysql Workbence.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
