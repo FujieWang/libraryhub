@@ -22,7 +22,7 @@
     if ($select_result2->num_rows > 0) {
         while($row = $select_result2->fetch_assoc()) { ?>
             <script>
-                words.push({text: '<?php echo addslashes($row["title"]);?>', size: parseInt(<?php echo $row["weight"]; ?>)});
+                words.push({text: '<?php echo addslashes($row["title"]);?>', size: parseInt(<?php echo $row["weight"]; ?>) + 5});
             </script>
      <?php } // Yeah, I know it is ugly
     }
