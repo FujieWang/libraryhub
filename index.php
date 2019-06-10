@@ -70,7 +70,7 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
-          <h1 class="text-uppercase text-white font-weight-bold">I DON'T HAVE A NAME</h1>
+          <h1 class="text-uppercase text-white font-weight-bold">LibraryHub</h1>
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
@@ -278,7 +278,7 @@
 
   <section class="page-section .bg-white" id="search">
   <div class="container">
-      <h2 class="text-center">SEARCH YOUR FAVOURITE BOOK</h2>
+      <h2 class="text-center">CHECK THE RANKING OF YOUR FAVORITE BOOK</h2>
       <form action = "" method = "post">
         <div class="form-group">
           <input type="text" class="form-control" id="inputTitle" name = "search_term" placeholder="The title of the book" required>
@@ -291,6 +291,7 @@
     <?php
       if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST["search_term"]) && $_POST["action"] == "search")
       {
+        echo "<br><br> <h3 class='text-center' > Result </h3>";
         echo "<br><br><table class='table'> \n";
 
         echo "<thead>
@@ -337,13 +338,15 @@
               while($row = $select_result->fetch_assoc()) {
                 $list_of_books[$row["title"]] = (int)$row["weight"];
               }
-          } 
-
+          }
+          
           //Sort the list of books based on weights
           arsort($list_of_books);
 
           // rank of a book
           $rank = 1;
+
+          $book_not_found = TRUE;
 
           //Check if the searched book exists
           foreach ($list_of_books as $name => $weight) {
@@ -355,10 +358,16 @@
               <td>$name</td>
               <td>$rank</td>
               </tr> \n";
-
+              $book_not_found = FALSE;
             }
             $rank += 1;
+          }        
+
+          if($book_not_found)
+          {
+            echo "<br><br> <h3 class='text-center' > Book not found! </h3>";
           }
+
       }
 
       echo "</tbody>";
