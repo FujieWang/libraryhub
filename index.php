@@ -264,7 +264,7 @@
         </div>
         <script>
           d3.wordcloud()
-            .size([1100, 850])
+            .size([900, 650])
             .fill(d3.scale.ordinal().range(["#884400", "#448800", "#888800", "#444400"]))
             .words(words)
             .spiral('archimedean')
