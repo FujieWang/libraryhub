@@ -75,7 +75,7 @@
         </div>
         <div class="col-lg-8 align-self-baseline">
           <p class="text-white-75 font-weight-light mb-5">NEED DESCRIPTION HERE!! </p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">About this site</a>
         </div>
       </div>
     </div>
@@ -86,10 +86,10 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="text-white mt-0">NEED A TITLE HERE!</h2>
+          <h2 class="text-white mt-0">About LibraryHub</h2>
           <hr class="divider light my-4">
           <p class="text-white-50 mb-4">NEED DESCRIPTION!!</p>
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#vote">Vote your favorite book now!</a>
         </div>
       </div>
     </div>
@@ -98,7 +98,7 @@
 
 
 <!-- Vote -->
-<section class="page-section" id="vote">
+<section class="page-section bg-light" id="vote">
   <div class="container">
     <h2 class="text-center">VOTE FOR YOUR FAVOURITE BOOK</h2>
     <form action = "" method = "post">
@@ -255,7 +255,7 @@
 
     <?php include 'words.php';?>
 
-  <section class="page-section bg-light" id = "cloud">
+  <section class="page-section" id = "cloud">
   <div class="container">
       <!--Load Wordcloud-->
       <div class="container">
@@ -276,7 +276,7 @@
       </div>
     </section>
 
-  <section class="page-section .bg-white" id="search">
+  <section class="page-section bg-light" id="search">
   <div class="container">
       <h2 class="text-center">CHECK THE RANKING OF YOUR FAVORITE BOOK</h2>
       <form action = "" method = "post">
