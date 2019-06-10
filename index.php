@@ -94,7 +94,7 @@
         <div class="col-lg-8 text-center">
           <h2 class="text-white mt-0">About LibraryHub</h2>
           <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">The Chicago Public Library (CPL) is the public library system that serves the City of Chicago in the U.S. state of Illinois. It consists of 80 locations, including a central library, two regional libraries, and branches distributed throughout the city\'s 77 Community Areas. However, Chicagoans may still have difficulty finding out the CPL nearby. Also, librarians may know little about Chicagoans real interest in books. The voting and information-searching function and CPL distribution map in our website are therefore designed to help solve the information asymmetry problems.</p>
+          <p class="text-white mb-4">The Chicago Public Library (CPL) is the public library system that serves the City of Chicago in the U.S. state of Illinois. It consists of 80 locations, including a central library, two regional libraries, and branches distributed throughout the city\'s 77 Community Areas. However, Chicagoans may still have difficulty finding out the CPL nearby. Also, librarians may know little about Chicagoans real interest in books. The voting and information-searching function and CPL distribution map in our website are therefore designed to help solve the information asymmetry problems.</p>
           <a class="btn btn-light btn-xl js-scroll-trigger" href="#vote">Vote your favorite book now!</a>
         </div>
       </div>
