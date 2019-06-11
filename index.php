@@ -304,6 +304,7 @@
         echo "<thead>
         <tr>
           <th scope='col'>Title</th>
+          <th scope='col'>Author</th>
           <th scope='col'>Rank</th>
         </tr>
       </thead> \n";
@@ -333,7 +334,7 @@
           $search_term = mysqli_real_escape_string($mysqli3, $_POST["search_term"]);
 
           // Select the title and author information for all records in the table
-          $search_sql = "SELECT id, title, weight FROM books";
+          $search_sql = "SELECT id, title, author, weight FROM books";
           $select_result = $mysqli3->query($search_sql);
 
           // Camel case the search term
@@ -343,7 +344,7 @@
           if ($select_result->num_rows > 0) {
               // Extract data for each row
               while($row = $select_result->fetch_assoc()) {
-                $list_of_books[$row["title"]] = (int)$row["weight"];
+                $list_of_books[$row["title"] . ':' . $row["author"]] = (int)$row["weight"];
               }
           }
           
@@ -357,12 +358,14 @@
 
           //Check if the searched book exists
           foreach ($list_of_books as $name => $weight) {
-            similar_text(clean($name), clean($search_term), $term_percentage);
-            if(strpos($name, $search_term) !== false || $term_percentage > 90)
+            $info = explode(':', $name); 
+            similar_text(clean($info[0]), clean($search_term), $term_percentage);
+            if(strpos($info[0], $search_term) !== false || $term_percentage > 90)
             {
               echo 
               "<tr>
-              <td>$name</td>
+              <td>$info[0]</td>
+              <td>$info[1]</td>
               <td>$rank</td>
               </tr> \n";
               $book_not_found = FALSE;
