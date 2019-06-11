@@ -19,12 +19,28 @@
     $select_sql2 = "SELECT title, url, weight FROM books";
     $select_result2 = $mysqli2->query($select_sql2);
 
+    $books = array();
     if ($select_result2->num_rows > 0) {
-        while($row = $select_result2->fetch_assoc()) { ?>
-            <script>
-                words.push({text: '<?php echo addslashes($row["title"]);?>', size: parseInt(<?php echo $row["weight"]; ?>) + 15});
-            </script>
-     <?php } // Yeah, I know it is ugly
+        while($row = $select_result2->fetch_assoc()) { 
+            $books[$row["title"]] = (int)$row["weight"];
+        } 
+
+        arsort($books);
+        $i = 1;
+        foreach ($books as $name => $weight) {
+            if($i <= 20)
+            { ?>
+                <script>
+                words.push({text: '<?php echo addslashes($name);?>', size: parseInt(<?php echo $weight; ?>)});
+                </script>
+                <?php 
+                $i += 1;
+            }
+            else
+            {
+                break;
+            }
+        }
     }
 ?>
 
