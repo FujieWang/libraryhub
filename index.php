@@ -265,7 +265,7 @@
   <div class="container">
       <!--Load Wordcloud-->
       <div class="container">
-        <h1 class="text-center">WORD COULD</h1>
+        <h1 class="text-center">WORD CLOUD</h1>
         <div id='wordcloud'></div>
         </div>
         <script>
