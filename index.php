@@ -42,7 +42,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">A class prject by Fujie Wang & Jingyang Liu</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">A class project by Fujie Wang & Jingyang Liu</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -94,7 +94,7 @@
         <div class="col-lg-8 text-center">
           <h2 class="text-white mt-0">About LibraryHub</h2>
           <hr class="divider light my-4">
-          <p class="text-white mb-4">The Chicago Public Library (CPL) is the public library system that serves the City of Chicago in the U.S. state of Illinois. It consists of 80 locations, including a central library, two regional libraries, and branches distributed throughout the city\'s 77 Community Areas. However, Chicagoans may still have difficulty finding out the CPL nearby. Also, librarians may know little about Chicagoans real interest in books. The voting and information-searching function and CPL distribution map in our website are therefore designed to help solve the information asymmetry problems.</p>
+          <p class="text-white mb-4">The Chicago Public Library (CPL) is the public library system that serves the City of Chicago in the U.S. state of Illinois. It consists of 80 locations, including a central library, two regional libraries, and branches distributed throughout the city's 77 Community Areas. However, Chicagoans may still have difficulty finding out the CPL nearby. Also, librarians may know little about Chicagoans real interest in books. The voting and information-searching function and CPL distribution map in our website are therefore designed to help solve the information asymmetry problems.</p>
           <a class="btn btn-light btn-xl js-scroll-trigger" href="#vote">Vote your favorite book now!</a>
         </div>
       </div>
