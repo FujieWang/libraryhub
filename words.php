@@ -28,7 +28,7 @@
         arsort($books);
         $i = 1;
         foreach ($books as $name => $weight) {
-            if($i <= 20)
+            if($i <= 30)
             { ?>
                 <script>
                 words.push({text: '<?php echo addslashes($name);?>', size: parseInt(<?php echo $weight; ?>)});
