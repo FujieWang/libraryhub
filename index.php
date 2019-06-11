@@ -344,7 +344,7 @@
           if ($select_result->num_rows > 0) {
               // Extract data for each row
               while($row = $select_result->fetch_assoc()) {
-                $list_of_books[$row["title"] . ':' . $row["author"]] = (int)$row["weight"];
+                $list_of_books[$row["title"] . '#' . $row["author"]] = (int)$row["weight"];
               }
           }
           
@@ -358,7 +358,7 @@
 
           //Check if the searched book exists
           foreach ($list_of_books as $name => $weight) {
-            $info = explode(':', $name); 
+            $info = explode('#', $name); 
             similar_text(clean($info[0]), clean($search_term), $term_percentage);
             if(strpos($info[0], $search_term) !== false || $term_percentage > 90)
             {
